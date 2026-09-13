@@ -20,7 +20,7 @@ nodes:
       installDiskSerial: ""
       macAddr: "74:d7:ae:00:1a:6f"
       mtu: 1500
-      encryptDisk: false
+      encryptDisk: true
       kernelModules: []
   - host: "talos-02"
     ip: "10.36.39.2"
@@ -32,7 +32,7 @@ nodes:
       installDiskSerial: ""
       macAddr: "74:d7:ae:00:19:d3"
       mtu: 1500
-      encryptDisk: false
+      encryptDisk: true
       kernelModules: []
   - host: "talos-03"
     ip: "10.36.39.3"
@@ -44,5 +44,5 @@ nodes:
       installDiskSerial: ""
       macAddr: "74:d7:ae:00:1a:4b"
       mtu: 1500
-      encryptDisk: false
+      encryptDisk: true
       kernelModules: []
