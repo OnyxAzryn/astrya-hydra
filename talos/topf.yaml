@@ -14,35 +14,32 @@ nodes:
     ip: "10.36.39.1"
     role: control-plane
     schematicId: "707db0ec4e91652a2fb500b54069ba903f197ea11175bbe71fb65aa34ea675b9"
-    secureboot: true
     data:
       installDisk: "/dev/nvme0n1"
       installDiskSerial: ""
       macAddr: "74:d7:ae:00:1a:6f"
       mtu: 1500
-      encryptDisk: true
+      encryptDisk: false
       kernelModules: []
   - host: "talos-02"
     ip: "10.36.39.2"
     role: control-plane
     schematicId: "707db0ec4e91652a2fb500b54069ba903f197ea11175bbe71fb65aa34ea675b9"
-    secureboot: true
     data:
       installDisk: "/dev/nvme2n1"
       installDiskSerial: ""
       macAddr: "74:d7:ae:00:19:d3"
       mtu: 1500
-      encryptDisk: true
+      encryptDisk: false
       kernelModules: []
   - host: "talos-03"
     ip: "10.36.39.3"
     role: control-plane
     schematicId: "707db0ec4e91652a2fb500b54069ba903f197ea11175bbe71fb65aa34ea675b9"
-    secureboot: true
     data:
       installDisk: "/dev/nvme0n1"
       installDiskSerial: ""
       macAddr: "74:d7:ae:00:1a:4b"
       mtu: 1500
-      encryptDisk: true
+      encryptDisk: false
       kernelModules: []
