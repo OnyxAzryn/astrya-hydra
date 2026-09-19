@@ -3,14 +3,14 @@ clusterName: hydra
 clusterEndpoint: https://10.36.39.254:6443
 
 # renovate: datasource=github-releases depName=siderolabs/talos
-talosVersion: v1.14.0
+talosVersion: v1.14.1
 # renovate: datasource=docker depName=ghcr.io/siderolabs/kubelet
 kubernetesVersion: v1.37.0
 
 secretsPath: secrets.sops.yaml
 
 nodes:
-  - host: "talos-01"
+  - host: "hydra-01"
     ip: "10.36.39.1"
     role: control-plane
     schematicId: "707db0ec4e91652a2fb500b54069ba903f197ea11175bbe71fb65aa34ea675b9"
@@ -21,18 +21,18 @@ nodes:
       mtu: 1500
       encryptDisk: false
       kernelModules: []
-  - host: "talos-02"
+  - host: "hydra-02"
     ip: "10.36.39.2"
     role: control-plane
     schematicId: "707db0ec4e91652a2fb500b54069ba903f197ea11175bbe71fb65aa34ea675b9"
     data:
-      installDisk: "/dev/nvme2n1"
+      installDisk: "/dev/nvme1n1"
       installDiskSerial: ""
       macAddr: "74:d7:ae:00:19:d3"
       mtu: 1500
       encryptDisk: false
       kernelModules: []
-  - host: "talos-03"
+  - host: "hydra-03"
     ip: "10.36.39.3"
     role: control-plane
     schematicId: "707db0ec4e91652a2fb500b54069ba903f197ea11175bbe71fb65aa34ea675b9"
