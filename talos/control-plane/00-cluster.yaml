@@ -22,6 +22,7 @@ kind: KubeAPIServerConfig
 certExtraSANs:
   - "127.0.0.1"
   - "10.36.39.254"
+  - "vip.talos.servers.astrya.onyxazryn.com"
 extraArgs:
   # https://kubernetes.io/docs/tasks/extend-kubernetes/configure-aggregation-layer/
   enable-aggregator-routing: "true"

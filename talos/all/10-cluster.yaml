@@ -2,6 +2,7 @@ machine:
   certSANs:
     - "127.0.0.1"
     - "10.36.39.254"
+    - "vip.talos.servers.astrya.onyxazryn.com"
 ---
 apiVersion: v1alpha1
 kind: KubeNetworkConfig
